@@ -5,7 +5,7 @@ const pokemon = {
   name: "nidorine",
   sprites: {
     other: {
-      dream_world: {
+      "official-artwork": {
         front_default:
           // eslint-disable-next-line max-len
           "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/33.svg",
