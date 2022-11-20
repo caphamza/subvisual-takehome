@@ -1,11 +1,7 @@
-import { Provider } from "react-redux";
+import { Home } from "pages";
 
-import { store } from "store";
+import "styles/main.scss";
 
 export default function App() {
-  return (
-    <Provider store={store}>
-      <h1>REACT APP</h1>
-    </Provider>
-  );
+  return <Home />;
 }
