@@ -1,4 +1,5 @@
 import { rest } from "msw";
+import { baseURL } from "utils/constants";
 
 const pokemon = {
   id: 1,
@@ -22,15 +23,15 @@ const pokemon = {
 };
 
 export const handlers = [
-  rest.get("https://pokeapi.co/api/v2/pokemon/1", (req, res, ctx) => {
+  rest.get(`${baseURL}1`, (req, res, ctx) => {
     return res(ctx.json(pokemon));
   }),
 
-  rest.get("https://pokeapi.co/api/v2/pokemon/nidorine", (req, res, ctx) => {
+  rest.get(`${baseURL}nidorine`, (req, res, ctx) => {
     return res(ctx.json(pokemon));
   }),
 
-  rest.get("https://pokeapi.co/api/v2/pokemon/xyz", (req, res, ctx) => {
+  rest.get(`${baseURL}xyz`, (req, res, ctx) => {
     return res(ctx.status(400));
   }),
 ];

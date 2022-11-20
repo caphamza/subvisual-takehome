@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "https://pokeapi.co/api/v2/pokemon/";
+import { baseURL } from "utils/constants";
 
 export const get = async <T>(query: string | number): Promise<T> => {
   try {
