@@ -17,11 +17,10 @@ const useHome = () => {
         id: res.id,
         name: res.name,
         power: res.types[0].type.name,
-        url: res.sprites.other.dream_world.front_default,
+        url: res.sprites.other["official-artwork"].front_default,
       });
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (e: any) {
-      console.log("E", e);
       setError(true);
     }
   };

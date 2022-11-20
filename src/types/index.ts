@@ -10,7 +10,7 @@ export interface PokemonAPIResponse {
   name: string;
   sprites: {
     other: {
-      dream_world: {
+      "official-artwork": {
         front_default: string;
       };
     };
