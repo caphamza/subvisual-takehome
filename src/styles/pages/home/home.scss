@@ -1,0 +1,37 @@
+.pokeman-app {
+  @include flex-column;
+  min-height: 100vh;
+  background-color: color(primary, 500);
+
+  &-container {
+    display: flex;
+    @include flex-column;
+
+    .card-container {
+      @include flex-row;
+
+      .left-arrow-img {
+        display: block;
+        margin-right: 12px; 
+        margin-bottom: 8px;
+        height: 63px;
+        width: 43px;
+        cursor: pointer;
+      }
+
+      .right-arrow-img {
+        display: block;
+        margin-left: 12px; 
+        margin-bottom: 8px;
+        height: 63px;
+        width: 43px;
+        cursor: pointer;
+      }
+
+      .hidden {
+        display: none;
+      }
+    }
+  }
+
+}
