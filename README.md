@@ -14,4 +14,4 @@ This project is deployed at [Netlify](https://tourmaline-piroshki-58fd0b.netlify
 3. Run `npm start` to start the project
 4. For testing run `npm test`
 
-This project is using `webpack5` `typescript` and `Airbnb linter`.
+This project is built using `webpack5` `typescript` and `Airbnb linter`.
